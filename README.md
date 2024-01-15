@@ -23,7 +23,7 @@ The VESC platform is the gold standard for brushless motor control for skateboar
 |      dutycycle    |
 |       current     |
 
-To use the library out of the box, the vesc tool must be configured as shown in images/vesc_tool_app_settings.png.
+To use the library out of the box, the vesc tool must be configured to walues shown below.
 VESC ID = 10
 CAN STATUS_MESSAGE_MODE = CAN_STATUS_1_2_3_4_5
 CAN Baud Rate = CAN_BAUD_250K
