@@ -33,8 +33,8 @@ CAN Baud Rate = CAN_BAUD_250K
 Place the .h and .cpp file in the same folder as the .ino file to use this library with no changes.
 # To do
 * Add support for multiple VESC esc on the same can bus ( currently only 1 esc is supported). This also includes support for diffrent VESC id's.
-* Creagte a method to update the value only whe coresponding can message is recived.
-* Add instructions on how to use the library and what are the hardvare options.
+* Creagte a method to update the value only when coresponding can message is recived.
+* Add instructions on how to use the library and what are the hardvare options (WIKI).
 
 LONGSHOT
 Add support to all of the vesc can bus features.
