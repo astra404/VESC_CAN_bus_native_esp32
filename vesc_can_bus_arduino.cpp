@@ -1,26 +1,15 @@
-//#include <mcp_can.h>
-//#include <SPI.h>
+
 #include "vesc_can_bus_arduino.h"
 #include <Arduino.h>
 #include <CAN.h>
 
-//MCP_CAN CAN0(10);                               // Set CS to pin 10
-
 void CANV::initialize() {
- // CAN0.begin(MCP_ANY, CAN_250KBPS, MCP_8MHZ);
-  //CAN0.setMode(MCP_NORMAL);                     // Set operation mode to normal so the MCP2515 sends acks to received data.
-  //SET PINMODE DONE IN MAIN // pinMode(CAN0_INT, INPUT);                            // Configuring pin for /INT input
-   Serial.begin(9600);
-  while (!Serial);
- Serial.println("..............");
-  Serial.println("CAN vesc library");
 CAN.setPins(CAN_RX, CAN_TX);
   // start the CAN bus at 250 kbps
   if (!CAN.begin(250E3)) {
     Serial.println("Starting CAN failed!");
     while (1);
   }
-  //CAN.onReceive(onReceive);
 }
 
 void CANV::spin() {
