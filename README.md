@@ -1,7 +1,7 @@
 **VESC library for CAN bus control using native esp32 CAN bus tranceiver**
 
 ![image](https://github.com/craigg96/vesc_can_bus_arduino/blob/main/images/header.png?raw=true "Header")
-Tis library is based on craigg96 vesc_can_bus_arduino library (https://github.com/craigg96/vesc_can_bus_arduino). Interpretation of can messages are left the same as it was in craiggs96 library, but instead of MCP2515 driver library it uses native arduino CAN bus library (https://github.com/sandeepmistry/arduino-CAN).
+Tis library is based on craigg96 vesc_can_bus_arduino library (https://github.com/craigg96/vesc_can_bus_arduino). Interpretation of can messages is left the same as it was in craiggs96 library, but instead of MCP2515 driver library it uses native arduino CAN bus library (https://github.com/sandeepmistry/arduino-CAN) vhich supports native ESP32 CAN bus tranceiver (SJA1000).
 The VESC platform is the gold standard for brushless motor control for skateboards and ebikes. This library allows you to use the can bus instead of UART (see solidgeek vescuart library) to communicate with the VESC which is more reliable and allows the single UART port on most arduinos to be free for debugging.  
 
 ## Realtime Data Messages
